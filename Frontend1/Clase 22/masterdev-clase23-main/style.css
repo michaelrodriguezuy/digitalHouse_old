@@ -1,0 +1,262 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+}
+
+/*
+COLORS
+
+bg-primary: #03faee;
+bg-secondary: #f8f8f8;
+color-primary: #8b8b8b;
+shadow: #92f7f2;
+
+Body
+Familia: 
+- H2
+Familia: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+Tamaño: 55px;
+Alto de línea: 70px;
+Espaciado entre letras: 10px;
+
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: #8b8b8b;
+}
+
+h2:before, h3:before {
+  content: '';
+  position: absolute;
+  width: 4em;
+  height: 0.5em;
+  background-color: #03faee;
+  z-index: -1;
+}
+
+h3:before {
+  width: 1.3em;
+}
+
+h3 {
+  z-index: 3;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  z-index: 3;
+}
+
+button {
+  background-color: #03faee;
+  border: dashed 0.5px;
+  padding: 1.5em 3em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+header .logo-container {
+  width: 15%;
+  font-weight: 700;
+  font-size: 2em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 1.5em;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+main section .cont-50 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 5em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main section .cont-50 img {
+  width: 100%;
+}
+
+main section .cont-30 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  padding: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #f8f8f8;
+  margin: 2em;
+}
+
+main section.hero .cont-50:first-child > * {
+  margin: 0.5em 0;
+}
+
+main section.features-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main section.features-container .feature {
+  z-index: -2;
+}
+
+main section.features-container .feature h3 {
+  margin: 1em 0 0.5em;
+}
+
+main section.features-container .feature p {
+  color: black;
+}
+
+main section.features-container .feature .icono {
+  border: 1px solid black;
+}
+
+.icono {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.icono img {
+  width: 15px;
+}
+
+.icono:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #03faee;
+  left: -5px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px 5px;
+}
+
+footer .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social-container a {
+  margin: 0 20px;
+}
+
+footer .copy {
+  margin: 0 20px;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

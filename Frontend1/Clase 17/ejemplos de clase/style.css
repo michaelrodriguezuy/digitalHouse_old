@@ -1,0 +1,238 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fondoPrimario: #FCF7F8;
+	--colorOscuro: #1A1E21;
+	--azul: #3860EC;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 500px;
+	width: 90%;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.titulo {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--colorOscuro);
+	margin-bottom: 20px;
+}
+
+.grupo {
+	padding: 60px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+	background: #dbdbdb;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+.enlace {
+    margin-left: 10px;
+}
+
+.enlace:active {
+    background-color: hotpink;
+    padding: 2px;
+	
+}
+
+.enlace:link {
+   
+
+}
+
+.enlace:visited {
+    color: rgb(0, 0, 230);
+	
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: rgb(255, 208, 0);
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: coral;
+    border-radius: 40px;
+    color: transparent;
+    transition: .8s;
+}
+
+
+
+
+
+
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+.parrafos p:first-child {
+    background-color: turquoise;
+    color: rgb(3, 3, 51);
+
+
+}
+
+.parrafos p:last-child {
+    background-color: blueviolet;
+    padding: 30px;
+	
+}
+
+
+
+
+/* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+.elementos span:first-of-type {
+    background-color: rgb(148, 15, 15);
+	
+}
+
+.elementos div:last-of-type {
+	background-color: chartreuse;
+}
+
+
+
+
+/* ? --- --- --- --- LISTA --- --- --- --- */
+.lista :nth-child(4n){
+    background-color: rgb(136, 42, 7);
+	
+}
+
+/*
+odd
+even
+3n
+*/
+
+.lista :nth-last-child(4){
+    background-color: cyan;
+    
+}
+
+
+
+
+/* ? --- --- --- --- LISTA 2 --- --- --- --- */
+
+.lista2 p:nth-of-type(2) {
+    padding: 20px;
+    color: yellowgreen;
+
+}
+.lista2 p:nth-of-type(2):hover {
+    padding: 60px;
+
+}
+
+.lista2 div:nth-last-of-type(2) {
+    background-color: violet;
+	
+}
+
+
+
+/* ? --- --- --- --- LISTA 3 --- --- --- --- */
+.lista3 :only-child { 
+    background-color: yellow !important;
+    border: 3px solid black;
+	
+}
+
+
+
+/* ? --- --- --- --- LISTA 4 --- --- --- --- */
+.lista4 p:only-of-type {
+    background-color: violet;
+}
+
+input {
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.grupo input[type='text']:focus {
+    border: 2px solid rgb(182, 0, 0) ;  
+}
+
+
+
+
+
+/* ? ------------- Pseudoclases ------------- */
+.formulario .nombre:focus {
+    background-color: rgb(255, 211, 211);
+
+
+}
+
+.formulario .id:disabled {
+    background-color: rgb(255, 208, 0);
+
+}
+
+.formulario .correo:valid {
+    border: 2px solid rgb(123, 255, 0);
+    background-color: rgb(0, 38, 255);
+	
+}
+
+.formulario .correo:invalid {
+    border: 4px solid red;
+    background-color: rgb(255, 208, 0);
+}
+
+.formulario .mensaje:required {
+    background-color: rgb(44, 44, 168);
+    color: white;
+	
+}
+
+.formulario .mensaje::placeholder {
+    color: violet;
+}
