@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Roboto Mono', sans-serif, monospace;
+    
+}
+
+.caja {
+    background-color: #D1891C;
+    
+    line-height: 18px;
+    padding: 5px 20px;    
+    
+}
+
+.caja-2 {
+    
+    padding: 20px;    
+    box-shadow: 0px 5px 10px rgb(105 105 105 / 64%);
+    color: white;
+}   
+
+
+h1 {
+    font-size: 72px;
+    line-height: 84px;
+    line-height: 100%;
+    font-style: normal;    
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+article {    
+    
+    display:inline-block;
+    width: 30px;
+    min-width: 300px;
+    
+    margin: 4%;
+    padding: 60px 20px 20px 20px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0px 5px 10px rgb(105 105 105 / 64%);
+    
+}
+
+
+
+.article-batman {
+    
+    background-image: url('../img/portada1.png');        
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e7e7e7;
+
+    position: relative; 
+  
+}
+.article-Harley {
+    background-image: url('../img/portadaHarley.png');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e7e7e7;
+   
+    position: relative; 
+  
+}
+
+.article-mMaravilla {
+    /*COMO TIENE MUCHO TEXTO SE ROMPE LA ALTURA DE LA TARJETA*/
+    background-image: url('../img/portadaMujerMaravilla.png');
+    
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #e7e7e7;
+   
+    position: relative; 
+  
+}
+.article-Superman {
+    background-image: url('../img/portadaSuperman.png');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e7e7e7;
+   
+    position: relative; 
+  
+}
+
+.like {
+    /*corazon*/
+    padding-top: -150px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    
+    position: absolute; 
+    top: 10px; 
+    left: 20px;
+
+}
+
+section {
+    
+    
+}
+.perfil {
+    display: block;
+    border-radius: 50px;
+    height: 110px;
+        
+    box-shadow: 0px 5px 10px rgb(105 105 105 / 64%);
+    
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+
+section p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button {
+    display: block;
+    border: none;
+    padding: 20px 40px;  
+    margin-top: 30px;
+    
+    margin-left: auto;
+    margin-right: auto;
+       
+}
+
+footer, button, .caja-2 {
+    background-color: #00669F;
+}
+
+footer {
+    
+    padding: 20px;
+    position: relative;
+    height:max-content;
+}
+
+footer p {
+    color:white;    
+    font-size: 16px;
+       
+    text-align: center;  
+    
+
+}
+
+footer img {
+    position: absolute;
+    
+    top: 10px;
+    right: 10px;
+    height: 40px;
+}
