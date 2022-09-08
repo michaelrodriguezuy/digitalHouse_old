@@ -53,21 +53,21 @@ de días de ese mes —suponiendo que no es un año bisiesto—.
  */
 
 function devuelveDias(mes) {
-     console.log(`La carga de la página comenzó hace ${ mes.getMonth()}`)
+    console.log(`La carga de la página comenzó hace ${ mes.getMonth()}`)
 }
 devuelveDias(3)
 
 /**
- * 4) Escribir una función de JavaScript que invierta un número. Por ejemplo,
+* 4) Escribir una función de JavaScript que invierta un número. Por ejemplo,
 si x = 32443, la salida debería ser 34423.
- */
+*/
 
 
 
 /**
- *5) Escribir una función que reciba una array y solo imprima los valores que
+*5) Escribir una función que reciba una array y solo imprima los valores que
 se repiten. Por ejemplo, dada la siguiente array e índice, la función
 imprimirá '6,23,33,100'. let array =
 [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
- */
+*/
 
