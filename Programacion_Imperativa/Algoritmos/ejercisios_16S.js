@@ -52,7 +52,10 @@ Visiten este sandbox para escribir su código. */
 de días de ese mes —suponiendo que no es un año bisiesto—.
  */
 
-
+function devuelveDias(mes) {
+     console.log(`La carga de la página comenzó hace ${ mes.getMonth()}`)
+}
+devuelveDias(3)
 
 /**
  * 4) Escribir una función de JavaScript que invierta un número. Por ejemplo,
