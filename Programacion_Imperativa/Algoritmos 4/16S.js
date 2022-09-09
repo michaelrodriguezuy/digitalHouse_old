@@ -52,17 +52,26 @@ Visiten este sandbox para escribir su código. */
 de días de ese mes —suponiendo que no es un año bisiesto—.
  */
 
-function devuelveDias(mes) {
-    console.log(`La carga de la página comenzó hace ${ mes.getMonth()}`)
+function devuelveDias(mes, anio) {
+    //let dias = new Date(anio, mes, 0).getdate()
+    console.log (`El mes ${mes} en el año ${anio} fue de ${new Date(anio, mes, 0).getDate()} días.`)
 }
-devuelveDias(3)
+devuelveDias(6,2022)
 
 /**
 * 4) Escribir una función de JavaScript que invierta un número. Por ejemplo,
 si x = 32443, la salida debería ser 34423.
 */
 
+function invierteNUmero (numero) {
+    let nuevoNumero=0
+    for (let i=0; i<numero.length; i++) {
+        
+    }
+    return nuevoNumero
+}
 
+console.log(invierteNUmero(12345))
 
 /**
 *5) Escribir una función que reciba una array y solo imprima los valores que
