@@ -1,0 +1,16 @@
+header {
+    background-color: orange;
+}
+
+main {
+    display: flex;
+    background-color: skyblue;    
+}
+section {    
+    background-color: chocolate;    
+    width: 20% /*100px; */
+}
+
+footer {
+    background-color:chartreuse;
+}
