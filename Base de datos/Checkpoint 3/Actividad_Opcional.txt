@@ -1,0 +1,61 @@
+Guia de Ejercicios Prácticos.
+
+Tomando como referencia la base de datos de bibliotecas, realizar los siguientes ejercicios.
+En primera instancia, resolver las consultas sin realizar uniones entre tablas. Devolviendo los
+campos solicitados, y en caso de corresponderse con un “ID” de referencia, devolver dicho ID.
+
+Una vez finalizados los 20 ejercicios, en el punto 21 volverán a realizar todos los ejercicios
+aplicando ahora si las uniones de tablas donde corresponde para obtener los datos reales.
+
+Ejercicios:
+1- Obtener un listado de todos los articulos.
+2- Obtener el nombre junto con el autor, código y año de los libros publicados entre 1990 y
+2000.
+3- Obtener el nombre junto con el autor, código, tipo y año de los articulos de tipo libro
+publicados después del año 2000 o del tipo pelicula con una duración mayor a 120 minutos.
+4- Obtener el articulo, tipo y año de los articulos publicados en el año 1991, 1998, 2017 y 2020.
+5- Obtener el articulo, tipo, año y duracion de los articulos que no fueron publicados en 1999,
+2004 y 2017 o cuya duracion sea de 200 o más. Eliminar duplicados.
+6- Obtener todos los autores cuyo pais de origen tenga la palabra "Bretaña".
+7- Obtener todos los préstamos que no hayan sido devueltos todavía.
+8- Obtener todos los préstamos que se realizaron en el año 2020.
+9- Validar si se ha prestado el articulo 49 alguna vez, y si su fecha de devolucion fue anterior a
+la fecha tope.
+10- Obtener todos los socios que han devuelto un préstamo posteriormente a la fecha tope.
+11- Obtener cuantas veces se ha prestado cada articulo que ya haya sido devuelto.
+12- Obtener los articulos que han sido prestados 3 veces o más.
+13- Obtener el total de minutos (duracion) de todas las peliculas que tenemos en la biblioteca.
+14- Obtener el promedio de paginas (duracion) de los libros.
+15- Obtener cuantas copias de cada articulo poseo.
+15- Obtener cuantos articulos de cada tipo tengo cuyo año de publicación sea el mismo.
+16- A la consulta anterior, sumarle que sólo devuelva aquellos de los cuales tengo más de 2.
+17- Obtener un listado de todos los socios.
+18- Obtener los primeros 10 socios ordenados alfabeticamente. 
+19- Obtener todos los prestamos realizados en el año 2020.
+20- Obtener todos los articulos de tipo pelicula anteriores al año 2010.
+
+21- Volver a realizar todas las consultas, estableciendo donde corresponda las relaciones con
+tablas para obtener los datos significativos para los usuarios en vez de los ID de relacion.
+Ejemplo: Obtener el nombre del socio que tomo prestado un articulo, o el nombre del articulo
+que fue prestado.
+
+
+Guia de Ejercicios N° 2
+
+1. Obtener un listado de socios (Apellido y nombre agrupados en un solo campo) con su correspondiente
+sucursal, ciudad y pais.
+2. Obtener un listado de articulos por sucursal, ordenados por el pais y la ciudad Ascendente.
+3. Obtener la cantidad de socios con prestamos que no han sido devueltos agrupados por el pais del
+articulo.
+4. Se solicita obtener la cantidad de articulos de tipo 'libro' por sucursal (Atencion: Existen multiples
+sucursales con el mismo nombre pero distinto pais)
+5. Obtener todos los socios de Colombia cuyo apellido empiece con la letra A, S o P junto con la ciudad a
+la que pertencen.
+6. Cuantos prestamos tuvo en total la sucursal 'Blockbuster Centro' de 'Montevideo'
+7. Que cantidad de empleados por ciudad posee nuestra empresa.
+8. Que empleados del sector 'Marketing' tienen un sueldo inferior al promedio para ese sector en todos los
+paises.
+9. Cuanto gasto en sueldos por sector y ciudad?
+10. Cual es el pais con mayor número de devoluciones tardías?
+11. Que ciudades tienen más de 10 devoluciones tardías de articulos.
+12. Existen sucursales que no posean aún articulos?
