@@ -23,15 +23,13 @@ function nuevaMatriz() {
     for (let i = 0; i < 10; i++) {
         matrices[i] = []
         for (let j = 0; j < 10; j++) {            
-            matrices[i][j] = (contador);        
+            matrices[i][j] = (contador);                
             contador++
         }        
     }
     return matrices    
 }
-
-nuevaMatriz()
-//console.log(nuevaMatriz())
+console.table(nuevaMatriz())
 
 
 /**
@@ -60,7 +58,7 @@ function sumaDiagonal1() {
     return resultado1
 }
 
-console.log(`La suma de la diagonal 1 es ${sumaDiagonal1()}`)
+//console.log(`La suma de la diagonal 1 es ${sumaDiagonal1()}`)
 
 function sumaDiagonal2() {
     let resultado2=0
@@ -76,4 +74,4 @@ function sumaDiagonal2() {
     return resultado2
 }
 
-console.log(`La suma de la diagonal 2 es ${sumaDiagonal2()}`)
+//console.log(`La suma de la diagonal 2 es ${sumaDiagonal2()}`)
