@@ -36,9 +36,9 @@ function ordenarASC   (arr, ASC) {
         
     }
 }
-//console.log(edades)
-//ordenarASC(edades, false)
-//console.log(edades)
+console.log(edades)
+ordenarASC(edades, false)
+console.log(edades)
 
 
 
