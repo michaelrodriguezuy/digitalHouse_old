@@ -60,28 +60,81 @@
 //nuevoArreglo(10) debe retornar [1,2,3,4,5,6,7,8,9,10]
 
 
+const nuevoArreglo = numero => {
+    let arr= []
+    for (let i = 1; i <= numero; i++) {
+        arr.push(i)        
+    }
+    return arr
+}
 
+//let resultado= nuevoArreglo(3)
+//console.log(resultado)
 
 //Similar String.split()
-//Deberás crear una función llamada split que reciba un string y simule el comportamiento de la función original. Si no estás seguro de cómo funciona, Google //puede ayudarte. Importante: no podés usar el String.split(). Ejemplo:
+//Deberás crear una función llamada split que reciba un string y simule el comportamiento de la función original. Si no estás seguro de cómo funciona, Google //puede ayudarte. 
+//Importante: no podés usar el String.split(). Ejemplo:
 //split(“hola”) debe retornar [“h”,”o”,”l”,”a”]
 //split(“chau”) debe retornar [“c”,”h”,”a”,”u”]
 
 
+const split2 = palabra => {
+    let arr=[]
+    for (let i = 0; i < palabra.length; i++) {
+             arr.push(palabra[i])   
+    }
+    return arr
+}
 
+let resultado2= split2('michael')
+//console.log(resultado2)
 
 
 //Manejando dos arreglos
-//Deberás crear una función llamada arrayHandler que reciba dos arreglos de igual largo como parámetros y muestre en la consola “Soy {elemento de array 1} y yo //soy {elemento de array 2}”. Ejemplo:
+//Deberás crear una función llamada arrayHandler que reciba dos arreglos de igual largo como parámetros y muestre en la consola “Soy {elemento de array 1} y 
+//yo //soy {elemento de array 2}”. Ejemplo:
 //arrayHandler([1,2,3,4], [“h”,”o”,”l”,”a”]) debe mostrar: 
 //Soy 1 y yo soy h
 //Soy 2 y yo soy o
 //Soy 3 y yo soy l
 //Soy 4 y yo soy a
 
+const arrayHandler = (arr1, arr2) => {
+    for (let i = 0; i < arr1.length; i++) {        
+        console.log(`Soy ${arr1[i]} y yo soy ${arr2[i]}`)                    
+    }
+}
+
+//let resultado3 = arrayHandler([1,2,3,4],['h','o','l','a'])
+//console.log(resultado3)
 
 //Palíndromo
 //Deberás crear una función llamada palindromo que indique si una palabra es palíndroma o no. Debe retornar “true” en caso de que lo sea, y “false” en caso de que //no. Ejemplo:
 //palindromo(“anilina”) debe retornar true
 //palindromo(“Ana”) debe retornar true
 //palindromo(“Enrique”) debe retornar false
+
+const esPalindromo = palabra => {
+
+    let mayus = palabra.toUpperCase()
+
+    let dadaVuelta = ""
+
+    for (let i = 0; i < mayus.length; i++) {
+        
+        dadaVuelta += mayus[mayus.length-i-1]
+        console.log(dadaVuelta)
+        
+    }
+
+    if (mayus === dadaVuelta) {
+        console.log(`La palabra ${palabra} es palindromo.`)
+    }
+    else
+    {
+        console.log(`La palabra ${palabra} no es palindromo.`)
+    }
+
+}
+
+let resutlado5 = esPalindromo('Enrique')
