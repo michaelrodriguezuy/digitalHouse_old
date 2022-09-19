@@ -56,27 +56,29 @@ function devuelveDias(mes, anio) {
     //let dias = new Date(anio, mes, 0).getdate()
     console.log (`El mes ${mes} en el año ${anio} fue de ${new Date(anio, mes, 0).getDate()} días.`)
 }
-devuelveDias(6,2022)
+//devuelveDias(6,2022)
 
 /**
 * 4) Escribir una función de JavaScript que invierta un número. Por ejemplo,
 si x = 32443, la salida debería ser 34423.
 */
 
-function invierteNUmero (numero) {
-    let nuevoNumero=0
-    for (let i=0; i<numero.length; i++) {
+const invierteNumero = numero => {
+    let nuevoNumero=numero.toString() //lo paso a string
+    let resultado=''
+    for (let i=0; i<nuevoNumero.length; i++) {
         
+         resultado+= nuevoNumero[nuevoNumero.length-i-1]
     }
-    return nuevoNumero
+    return resultado
 }
-
-console.log(invierteNUmero(12345))
+let resultado = invierteNumero(12345)
+console.log(`El resultado es ${resultado}`)
 
 /**
-*5) Escribir una función que reciba una array y solo imprima los valores que
-se repiten. Por ejemplo, dada la siguiente array e índice, la función
-imprimirá '6,23,33,100'. let array =
+*5) Escribir una función que reciba una array y solo imprima los valores que se repiten. Por ejemplo, dada la siguiente array e índice, la función imprimirá '6,23,33,100'. let array =
 [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 */
+
+
 

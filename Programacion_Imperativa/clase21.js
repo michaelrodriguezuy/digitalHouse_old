@@ -148,7 +148,7 @@ function ordenar(arr, propiedad, ASC) {
 // Teniendo 3 arrays:
 fila1 = [4,9,2]
 fila2 = [3,5,7]
-fila3 = [8,1,6]
+fila3 = [8,1,60]
 // 
 // Realiza las siguientes tareas:
 // Crea una matriz con esta forma:
@@ -159,9 +159,7 @@ fila3 = [8,1,6]
 let matrices = []
 
 function creaMatrizDesdeArr(arr1, arr2, arr3) {
-    matrices.push(arr1)      
-    matrices.push(arr2)      
-    matrices.push(arr3)      
+    matrices.push(arr1,arr2,arr3)      
 }
 creaMatrizDesdeArr(fila1, fila2, fila3)
 console.table(matrices)
@@ -169,11 +167,86 @@ console.table(matrices)
 //Luego, a partir de esta matriz, desarrollar una función que reciba la matriz por parámetro y retorne lo solicitado:
 //
 //Función que reciba por parámetro la fila y retornar la suma de la misma.
-//Función que retorne en un array la suma de las diagonales [15 , 15], sumando él centro las dos veces
-//Función que retorne en un array los elementos pares ejemplo [4, 2, 8, 6]
-//Función que retorne en un array los elementos mayores a 5
-//Función que retorne un objeto literal con dos propiedades
-//pares : [4, 2, 8, 6], // array de pares
-//impares : [9, 3, 5, 7, 1], // array de impares
+const sumaFila = (mat,fila) => {
+    let suma=0
+    for (let i = 0; i < mat.length; i++) {
+               suma+=mat[fila][i] 
+    }
+    return `El resultado de la suma en la fila ${fila} es ${suma}`
+}
 
+let resultado = sumaFila(matrices,2)
+//console.log(resultado)
+//Función que retorne en un array la suma de las diagonales [15 , 15], sumando él centro las dos veces
+const sumaDiagonales = mat => {
+    let sumaDiagonal1=0
+    let sumaDiagonal2=0
+    for (let i = 0; i < mat.length; i++) {
+            sumaDiagonal1+= mat[i][i]
+            sumaDiagonal2+= mat[i][mat.length-1-i]
+    }
+    return [sumaDiagonal1,sumaDiagonal2]
+}
+let resultado2 = sumaDiagonales(matrices)
+//console.table(`la suma de sus respectivas diagonales es ${resultado2}`)
+
+/* Función que retorne en un array los elementos pares ejemplo [4, 2, 8, 6] */
+const retornaPares = mat => {
+    let newArr=[]
+    for (let i = 0; i < mat.length; i++) {
+        for (let j = 0; j < mat[i].length; j++) {
+            if (mat[i][j] % 2==0) { //tomo solo los pares
+                newArr.push(mat[i][j])
+            }
+        }
+        
+    }
+    return newArr
+}
+let resultado3=retornaPares(matrices)
+// console.table(resultado3)
+
+/*  Función que retorne en un array los elementos mayores a 5 */
+const retornaMayoresA5 = mat => {
+    let newArr=[]
+    for (let i = 0; i < mat.length; i++) {
+        for (let j = 0; j < mat[i].length; j++) {
+            if (mat[i][j]>5) {
+                newArr.push(mat[i][j])
+            }
+        }
+        
+    }
+    return newArr
+}
+let resultado4=retornaMayoresA5(matrices)
+//  console.table(resultado4)
+
+/* Función que retorne un objeto literal con dos propiedades
+pares : [4, 2, 8, 6], // array de pares
+impares : [9, 3, 5, 7, 1], // array de impares
+*/
+const retornaParesEimpares = mat => {
+    
+    let objeto = {
+        pares:[],
+        impares:[]
+    }
+
+    for (let i = 0; i < mat.length; i++) {
+        for (let j = 0; j < mat[i].length; j++) {
+            if (mat[i][j] % 2==0) { //tomo solo los pares
+                objeto.pares.push(mat[i][j])
+            }
+            else {
+                objeto.impares.push(mat[i][j])
+            }
+        }
+        
+    }
+
+    return objeto
+}
+let resultado5=retornaParesEimpares(matrices)
+console.table(resultado5)
 
