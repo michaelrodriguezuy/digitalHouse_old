@@ -6,15 +6,13 @@
 let arr1=  [4,9,2,5,6,7,1,2] // false
 let arr2 = [1,2,3,4,5,6,7,8] // true
 
-const verificar = (arr)=>{
-    let estaOrdenado=true
-
+const verificar = (arr)=>{    
     for (let i = 0; i < arr.length; i++) {
         if( arr[i] > arr[i + 1] ){ //ASC
              return false
         }        
     }    
-    return estaOrdenado
+    return true
 }
 
 // console.log(verificar(arr2))
@@ -28,7 +26,6 @@ let matrices2 = []
 let contador=1
 
 function nuevaMatriz(fila, columna) {
-
     for (let i = 0; i < fila; i++) {
         matrices2[i] = []
         for (let j = 0; j < columna; j++) {            
@@ -102,7 +99,6 @@ function orderAscLegajo(arr, propiedad) {
 // -Desarrollar una función llamada orderDescLegajo que reciba por parámetro él array de personas y realice un ordenamiento de forma descendente
 function orderDescLegajo(arr, propiedad) {
     let aux
-
     for (let i = 0; i < arr.length; i++) {        
         for (let j = 0; j < arr.length-1; j++) { // -1 porque al ultimo no lo voy a evaluar            
                 if (arr[j][propiedad] < arr[j+1][propiedad]) {
