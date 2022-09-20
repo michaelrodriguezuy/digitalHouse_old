@@ -82,24 +82,35 @@ let resultado = invierteNumero(12345)
 
 let arreglo = [3,6,6,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]
 
-const devuelveRepetidos = arr => {
+const devuelveRepetidos = arr => {    
+    let arrRepetidos=[]    
+    let contador=0
     let arrTemporal=[]
-    let arrRepetidos=[]
-    let bandera=0
-    
-    for (let i = 0; i < arr.length; i++) { //22
-        for (let j = 0; j <= arrTemporal.length; j++) {
-            
-            if (arr[i] == arrTemporal[j]) {
-                bandera=1
-            
-            }                 
-        }    
-        if (bandera == 0) {
-            arrRepetidos.push(arr[i])
-        }       
+for (let i = 0; i < arr.length; i++) {   
+
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[i] == arr[j]) {
+            contador+=1
+        }                       
+    }            
+    if (contador>1) {
+        arrTemporal.push(arr[i]) 
+    }    
+    contador=0    
+}
+//depurar
+for (let i = 0; i < arrTemporal.length; i++) {
+    for (let j = 0; j < arrTemporal.length; j++) {
+        if (arrTemporal[i] == arrRepetidos[j]) {
+            contador=1
+        }
     }
-    return arrRepetidos
+    if (contador==0) {
+        arrRepetidos.push(arrTemporal[i]) 
+    }
+    contador=0    
+}
+return arrRepetidos
 }
 
 let resultado2 = devuelveRepetidos(arreglo)
